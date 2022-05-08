@@ -4,6 +4,6 @@ about = "Your new Fermyon project"
 
 [extra]
 copyright = "Fermyon"
-github = "https://github.com/fermyon/spin"
+github = "https://github.com/fermyon/docs-website-template"
 twitter = "https://twitter.com/fermyontech"
 ga_measurement_id = ""

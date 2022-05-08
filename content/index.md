@@ -16,10 +16,21 @@ system theme changes.
 
 ### Creating a new documentation website
 
-Building a Fermyon documentation website using this template is done by copying
+Building a Fermyon documentation website using this template is done by running
+the `bart new site` command, or by copying
 the contents of this repository in the intended destination (for example, the
 `docs/` directory in your project repository), then adding your project documentation
-in the `content/` directory.
+in the `content/` directory:
+
+```bash
+$ bart new site --git https://github.com/fermyon/docs-website-template docs
+```
+
+Then, add new pages in the content directory:
+
+```bash
+$ bart new post --title "My new documentation page" --author "Enrico Fermi" docs/content new.md
+```
 
 By default, the files in `content/` are not displayed in the sidebar.
 To add them, update the desired section in `templates/content_sidebar.hbs` with
@@ -30,7 +41,7 @@ your page title:
     Your section
 </p>
 <ul class="menu-list">
-    <li><a href="{{site.info.base_url}}/">Introduction</a></li>
+    <li><a href="{{site.info.base_url}}/new">My new documentation page</a></li>
 </ul>
 ```
 
