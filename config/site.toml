@@ -1,0 +1,9 @@
+title = "Fermyon Documentation"
+base_url = "http://localhost:3000"
+about = "Your new Fermyon project"
+
+[extra]
+copyright = "Fermyon"
+github = "https://github.com/fermyon/spin"
+twitter = "https://twitter.com/fermyontech"
+ga_measurement_id = ""
